@@ -18,13 +18,13 @@
         </div>
         <div class="divide">
             <nav>
-                <a href="">Home</a>
+                <a href="index.php">Home</a>
                 <a href="">nav</a>
                 <a href="">nog</a>
             </nav>
         </div>
         <div class="divide">
-            <a href="">
+            <a href="cart.php">
                 <i class="fa-solid fa-cart-shopping"></i>
             </a>
         </div>  
