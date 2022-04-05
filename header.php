@@ -9,17 +9,23 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/1dbd977bb4.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/a3a135dd83.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
-        <img class="logo" src="img/logo.webp" alt="logo">
-        <nav>
-            <a href="">pagina</a>
-            <a href="">nav</a>
-            <a href="">nog</a>
-        </nav>
-        <i class="fa-solid fa-cart-shopping"></i>
+        <div class="divide">
+            <img class="logo" src="img/logo.webp" alt="logo">
+        </div>
+        <div class="divide">
+            <nav>
+                <a href="">Home</a>
+                <a href="">nav</a>
+                <a href="">nog</a>
+            </nav>
+        </div>
+        <div class="divide">
+            <a href="">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </a>
+        </div>  
     </header>
-</body>
-</html>

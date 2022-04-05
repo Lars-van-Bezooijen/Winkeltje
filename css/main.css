@@ -103,20 +103,27 @@ header{
 header img.logo{
   width: 200px;
 }
+.divide{
+  width: 33%;
+  text-align: center;
+}
 nav a{
   color: white;
   margin: 0 20px;
   font-size: 20px;
   text-decoration: none;
-  border-bottom: 1px solid white;
   padding: 5px 10px 3px 5px;
   font-weight: bold;
 }
 nav a:hover{
-  border-bottom: 2px solid white
+  border-bottom: 2px solid white;
 }
 i{
-  background-color: red;
+  color: white;
+  font-size: 24px;
+}
+i.fa-cart-shopping{
+  padding: 5px;
 }
 
 /* ==========================================================================
