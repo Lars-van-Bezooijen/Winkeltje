@@ -19,8 +19,8 @@
         <div class="divide">
             <nav>
                 <a href="index.php">Home</a>
-                <a href="">nav</a>
-                <a href="">nog</a>
+                <a href="products.php"> Producten</a>
+                <a href="contact.php">Contact</a>
             </nav>
         </div>
         <div class="divide">
