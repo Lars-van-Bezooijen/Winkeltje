@@ -20,7 +20,7 @@
             <nav>
                 <a href="index.php">Home</a>
                 <a href="products.php"> Producten</a>
-                <a href="support.php">Support</a>
+                <a href="status.php">Status</a>
             </nav>
         </div>
         <div class="divide">
