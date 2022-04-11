@@ -38,13 +38,11 @@
                                 echo '<p class="stock-empty">Niet leverbaar!</p>';
                             }
                         ?>
-                    </div>
-                            
-                    
+                    </div> 
                 </div>
                 <div class="split">
-                    <form class="amount" action="">
-                        <input type="number" name="amount" id="amount" min="0" max="<?php echo $product['stock']; ?>">
+                    <form class="amount" action="backend/cartController.php" method="POST">
+                        <input required type="number" name="amount" id="amount" min="0" max="<?php echo $product['stock']; ?>">
                         <input type="submit" value="in winkelwagen" class="winkelwagen">
                     </form>
                 </div>

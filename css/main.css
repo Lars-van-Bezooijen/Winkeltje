@@ -169,10 +169,12 @@ input[type="number"]{
   color: white;
   font-weight: bold;
   margin-left: 15px;
+  border-right: 3px solid transparent;
 }
 .winkelwagen:hover{
   cursor: pointer;
-  background-color: #965d2c;
+  border-bottom: 3px solid #965d2c;
+  border-right: 3px solid #965d2c;
 }
 
 /* ==========================================================================
