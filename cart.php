@@ -1,3 +1,7 @@
+<?php 
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +16,5 @@ require_once "header.php"
 
 
 ?>  
-<?php 
-require_once "footer.php"
-
-
-?>
 </body>
 </html>
