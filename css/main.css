@@ -137,6 +137,9 @@ i.fa-cart-shopping{
   display: flex;
   justify-content: space-between;
 }
+.column-split{
+  display: flex;
+}
 .name{
   font-weight: bold;
 }
@@ -149,6 +152,27 @@ i.fa-cart-shopping{
 }
 img.img{
   width: 80px;
+  margin-right: 20px;
+}
+input[type="number"]{
+  border-radius: 0;
+  border: 1px solid black;
+  width: 50px;
+  padding: 5px 0px 5px 5px;
+  font-size: 14px;
+}
+.winkelwagen{
+  background: #c09462;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  margin-left: 15px;
+}
+.winkelwagen:hover{
+  cursor: pointer;
+  background-color: #965d2c;
 }
 
 /* ==========================================================================
