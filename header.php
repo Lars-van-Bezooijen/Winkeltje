@@ -14,9 +14,9 @@
             <i class="fa-solid fa-cart-shopping"></i>
         </a>
         <?php if(isset($_SESSION['user_id'])): ?>
-            <a href="login.php">Inloggen</a>
+            <a class="nav-a" href="logout.php">Uitloggen</a>
         <?php else: ?>
-            <a href="login.php">Inloggen</a>
+            <a class="nav-a" href="login.php">Inloggen</a>
         <?php endif; ?>
     </div>  
 </header>

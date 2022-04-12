@@ -111,7 +111,7 @@ header img.logo{
   width: 33%;
   text-align: center;
 }
-nav a{
+nav a, .nav-a{
   color: white;
   margin: 0 20px;
   font-size: 20px;
@@ -119,7 +119,7 @@ nav a{
   padding: 5px 10px 3px 5px;
   font-weight: bold;
 }
-nav a:hover{
+nav a:hover, .nav-a:hover{
   border-bottom: 2px solid white;
 }
 i{
@@ -175,6 +175,41 @@ input[type="number"]{
   cursor: pointer;
   border-bottom: 3px solid #965d2c;
   border-right: 3px solid #965d2c;
+}
+.loginmain{
+  height: calc(100vh - 113px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.loginform{
+  border-radius: 5px;
+  padding: 80px 50px;
+  box-shadow: 0 0 3px rgb(0, 0, 0, 0.25);
+}
+.loginform .form-group{
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+}
+.loginform input{
+  margin-left: 30px;
+  padding: 5px;
+  width: 200px;
+}
+.loginform input[type="submit"]{
+  justify-content: end;
+  margin-left: 0px;
+  margin-top: 15px;
+  border: none;
+  background: #1dd144;
+  padding: 10px 0;
+  width: 100%;
+  color: white;
+  font-weight: bold;
+}
+.loginform input[type="submit"]:hover{
+  cursor: pointer;
 }
 
 /* ==========================================================================

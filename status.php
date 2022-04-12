@@ -20,8 +20,8 @@ if(!isset($_SESSION['user_id']))
     <title>Status</title>
 </head>
 <body>
-<?php 
-    require_once "header.php"
-?>  
+    <?php 
+        require_once "header.php"
+    ?>  
 </body>
 </html>
