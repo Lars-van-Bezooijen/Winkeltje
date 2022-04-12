@@ -5,9 +5,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php 
+        require_once "head.php"
+    ?> 
     <title>Producten</title>
 </head>
 <body>
@@ -42,6 +42,7 @@
                 </div>
                 <div class="split">
                     <form class="amount" action="backend/cartController.php" method="POST">
+                        <input type="hidden" name="product_id" value="<?php echo $product['id']; ?>">
                         <input required type="number" name="amount" id="amount" min="0" max="<?php echo $product['stock']; ?>">
                         <input type="submit" value="in winkelwagen" class="winkelwagen">
                     </form>
