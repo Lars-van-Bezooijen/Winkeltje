@@ -211,6 +211,39 @@ input[type="number"]{
 .loginform input[type="submit"]:hover{
   cursor: pointer;
 }
+.loggedin{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  border: 1px solid #6262ff;
+  background: #cacaff;
+  padding: 15px 20px;
+  margin: 20px;
+  text-align: center;
+  width: 500px;
+  position: relative;
+}
+.flex{
+  display: flex;
+  width: 100%;
+}
+.jcc{
+  justify-content: center;
+}
+.aic{
+  align-items: center;
+}
+.close{
+  position: absolute;
+  left: 500px;
+}
+a.close{
+  text-decoration: none;
+  font-weight: bold;
+  color: #ff4242;
+  font-size: 20px;
+}
 
 /* ==========================================================================
    Helper classes
