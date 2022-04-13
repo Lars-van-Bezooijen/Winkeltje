@@ -10,7 +10,7 @@
         </nav>
     </div>
     <div class="divide">
-        <a href="cart.php">
+        <a class="nav-a" href="cart.php">
             <i class="fa-solid fa-cart-shopping"></i>
         </a>
         <?php if(isset($_SESSION['user_id'])): ?>
