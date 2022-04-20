@@ -2,31 +2,29 @@
 
 session_start();
 
-$amount = $_POST['amount'];
-$product_id = $_POST['product_id'];
-
-if($amount == null || $amount == 0)
+if(!isset($_SESSION['user_id']))
 {
-    die("Error: amount is niet ingesteld of is 0");
-}
-
-// if cart is empty
-if(!isset($_SESSION['product_id']))
-{
-    $_SESSION['product_id'] = $product_id;
-}
-
-if(!isset($_SESSION['amount']))
-{
-    $_SESSION['amount'] = $amount;
+    $msg = "Je moet eerst inloggen";
+    header("Location: ../login.php?msg=$msg");
     exit;
 }
 
+$action = $_POST['action'];
 
+if($action == "create"){
+    $amount = $_POST['amount'];
+    $product_id = $_POST['product_id'];
+    
+    if($amount == null || $amount == 0)
+    {
+        die("Geen geldig aantal gekozen");
+        
+    }
+    
+    $_SESSION['cart'][$product_id] = $amount;
+    
+    header("Location: ../products.php");
+}
 
-$_SESSION['product_id'] += $product_id;
-$_SESSION['amount'] += $amount;
-
-var_dump($_SESSION);
 
 ?>

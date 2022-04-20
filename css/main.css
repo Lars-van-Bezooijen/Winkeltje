@@ -211,7 +211,7 @@ input[type="number"]{
 .loginform input[type="submit"]:hover{
   cursor: pointer;
 }
-.loggedin{
+.loggedin, .cart-empty{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -243,6 +243,50 @@ a.close{
   font-weight: bold;
   color: #ff4242;
   font-size: 20px;
+}
+.cart-a{
+  color: rgb(34, 34, 251);
+  text-decoration: none;
+}
+.cart-a:hover{
+  color: rgb(1, 1, 221);
+}
+.cart-product{
+  display: flex;
+}
+table{
+  border-spacing: 0;
+}
+table thead{
+  color: #1dd144;
+  font-weight: bold;
+}
+table td{
+  vertical-align: top;
+  height: 100px;
+  padding-right: 20px;
+  padding: 5px;
+  border-bottom: 2px solid rgb(214, 214, 214);
+}
+table tr:last-child td{
+  border: none;
+}
+table td:nth-child(2){
+  padding-right: 100px;
+}
+table tr:nth-child(1){
+  padding-right: 5px;
+}
+table thead th{
+  font-size: 18px;
+  padding-right: 100%;
+  border-bottom: 5px solid rgb(232, 232, 232);
+}
+table thead th:nth-child(5), table tbody td:nth-child(5){
+  padding-left: 20px;
+}
+table img{
+  width: 80px;
 }
 
 /* ==========================================================================

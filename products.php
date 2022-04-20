@@ -42,6 +42,7 @@
                 </div>
                 <div class="split">
                     <form class="amount" action="backend/cartController.php" method="POST">
+                        <input type="hidden" name="action" value="create">
                         <input type="hidden" name="product_id" value="<?php echo $product['id']; ?>">
                         <input required type="number" name="amount" id="amount" min="0" max="<?php echo $product['stock']; ?>">
                         <input type="submit" value="in winkelwagen" class="winkelwagen">

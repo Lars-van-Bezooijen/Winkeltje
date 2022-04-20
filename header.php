@@ -9,9 +9,18 @@
             <a href="status.php">Status</a>
         </nav>
     </div>
+    
     <div class="divide">
         <a class="nav-a" href="cart.php">
-            <i class="fa-solid fa-cart-shopping"></i>
+            <i class="fa-solid fa-cart-shopping">
+            <?php 
+                if(isset($_SESSION['cart']))
+                {
+                    $productAmount = count($_SESSION['cart']);
+                    if(!$productAmount == 0){echo $productAmount;}
+                }
+            ?>
+            </i>
         </a>
         <?php if(isset($_SESSION['user_id'])): ?>
             <a class="nav-a" href="logout.php">Uitloggen</a>
