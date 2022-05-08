@@ -34,5 +34,14 @@ session_start();
         </div>
         <?php unset($_SESSION['order_success']); ?>
     <?php endif; ?>
+
+    <div class="wrapper">
+        <main>
+            <h1>Welkom bij de scouting Het Winkeltje!</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis enim eum corrupti in. Ducimus deserunt culpa numquam sed voluptatum nostrum excepturi aliquam minus quos nisi. Accusantium est corrupti nulla deleniti et inventore tenetur dignissimos suscipit, ex soluta beatae atque non saepe. Assumenda eligendi quasi labore omnis cum deserunt error maxime veritatis. Delectus earum saepe dolores reiciendis?</p>
+            <p>Bestel nu onze eigen artikelen <a href="products.php" class="cart-a">hier!</a></p>
+        </main>
+    </div>
+    
 </body>
 </html>

@@ -314,6 +314,12 @@ table img{
 .submit-btn:hover{
   cursor: pointer;
 }
+main h1{
+  margin: 30px 0;
+}
+main p{
+  margin-bottom: 10px;
+}
 
 /* ==========================================================================
    Helper classes
