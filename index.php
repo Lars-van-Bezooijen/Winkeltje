@@ -25,5 +25,14 @@ session_start();
         </div>
         <?php unset($_SESSION['logged_in']); ?>
     <?php endif; ?>
+    <?php if(isset($_SESSION['order_success'])): ?>
+        <div class="flex jcc aic">
+            <div class="loggedin">
+                <p>Je hebt uw order vast gezet!</p>
+                <a class="close" href="">X</a>
+            </div>
+        </div>
+        <?php unset($_SESSION['order_success']); ?>
+    <?php endif; ?>
 </body>
 </html>

@@ -257,7 +257,7 @@ a.close{
 table{
   border-spacing: 0;
 }
-table thead{
+table thead, .cart-p{
   color: #1dd144;
   font-weight: bold;
 }
@@ -287,6 +287,32 @@ table thead th:nth-child(5), table tbody td:nth-child(5){
 }
 table img{
   width: 80px;
+}
+.center{
+  width: 50%;
+  justify-content: space-between;
+  display: flex;
+  margin: 50px auto;
+}
+.cart-form .form-group{
+  display: flex;
+  justify-content: space-between;
+  margin-right: 50px;
+  margin-bottom: 5px;
+}
+.form-group input{
+  margin-left: 20px;
+}
+.submit-btn{
+  color: #ffffff;
+  background: #1dd144;
+  font-weight: bold;
+  border: none;
+  border-radius: 3px;
+  padding: 10px 15px;
+}
+.submit-btn:hover{
+  cursor: pointer;
 }
 
 /* ==========================================================================

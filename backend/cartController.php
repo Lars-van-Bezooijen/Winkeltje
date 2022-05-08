@@ -25,6 +25,20 @@ if($action == "create"){
     
     header("Location: ../products.php");
 }
+else if($action = "order")
+{
+    require_once('conn.php');
+    $query = "INSERT INTO orders (products, email_recipient) VALUES (:products, :email_recipient)";
+    $statement = $conn->prepare($query);
+    $statement->execute([
+        ":products" => json_encode($_SESSION['cart']),
+        ":email_recipient" => "test"
+    ]);
+
+    $_SESSION['order_success'] = true;
+    unset($_SESSION['cart']);
+    header("Location: ../index.php");
+}
 
 
 ?>
